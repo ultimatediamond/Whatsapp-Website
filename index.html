@@ -1,200 +1,78 @@
-<!doctype html><meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=refresh content="0;url=Ultimate_Diamond_Home.html">
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name=theme-color content="#0b0c0f">
 <title>Ultimate Diamond Co.</title>
-<style>body{font-family:-apple-system,Helvetica,Arial,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;color:#4a5a6a}</style>
-<p>Opening Ultimate Diamond… <a href="Ultimate_Diamond_Home.html">tap here if nothing happens</a></p>
-<style>/* ── dealer dropdown in the nav ── */
- .udnav{position:sticky}
- .udnav nav details.dd>summary{list-style:none;cursor:pointer;padding:7px 13px;border-radius:8px;
-   color:#c6cad2;font-size:13px;font-weight:500;white-space:nowrap;display:inline-block;
-   transition:background .12s,color .12s}
- .udnav nav details.dd>summary::-webkit-details-marker{display:none}
- .udnav nav details.dd>summary:hover{background:rgba(255,255,255,.12);color:#fff}
- .udnav nav details.dd>summary.on{background:linear-gradient(135deg,#e8cc79,#c9a24b);
-   color:#221a06;font-weight:800}
- .udnav nav details.dd .ddm{position:absolute;left:12px;right:12px;top:calc(100% + 6px);
-   background:#141519;border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:10px;
-   z-index:150;display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:3px;
-   box-shadow:0 16px 40px rgba(0,0,0,.45)}
- .udnav nav details.dd .ddm a{display:block;padding:8px 12px!important}
- @media(max-width:640px){
-   .udnav{position:relative}
-   .udnav nav details.dd .ddm{left:6px;right:6px;grid-template-columns:repeat(2,1fr);
-     max-height:62vh;overflow-y:auto}
+<style>
+ *{box-sizing:border-box}
+ :root{--bg:#f5f6f8;--card:#fff;--ink:#0f1115;--muted:#7a7f8a;--line:#e8e9ee;--accent:#2f6bff;--dark:#0b0c0f}
+ html,body{margin:0;background:var(--bg);color:var(--ink);
+   font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter','Segoe UI',Roboto,sans-serif;
+   -webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+ .wrap{max-width:940px;margin:0 auto;padding:0 14px 40px}
+ /* app bar */
+ .bar{position:sticky;top:0;z-index:20;background:var(--dark);margin:0 -14px 14px;
+   padding:calc(env(safe-area-inset-top) + 12px) 16px 12px;border-radius:0 0 18px 18px}
+ .bar .row{display:flex;align-items:center;gap:10px;max-width:940px;margin:0 auto}
+ .bar img{height:26px}
+ .bar b{color:#fff;font-size:12px;letter-spacing:3px;font-weight:800}
+ .bar .sp{flex:1}
+ .bar .upd{color:#9aa0ad;font-size:11px}
+ #q{width:100%;max-width:940px;margin:10px auto 0;display:block;border:none;border-radius:12px;
+   padding:12px 14px;font-size:16px;background:#20232b;color:#fff;outline:none}
+ #q::placeholder{color:#8b909c}
+ h1{font-size:22px;font-weight:800;letter-spacing:-.5px;margin:6px 2px 2px}
+ .lede{color:var(--muted);font-size:13.5px;margin:0 2px 14px}
+ .grp{margin:0 0 20px}
+ .grp h2{font-size:12px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);
+   font-weight:800;margin:0 2px 9px;display:flex;align-items:center;gap:8px}
+ .cnt{background:#e7ebf5;color:#3b5bdb;border-radius:999px;font-size:10px;padding:1px 8px;letter-spacing:0}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+ .tile{display:flex;align-items:center;min-height:58px;padding:14px 15px;background:var(--card);
+   border:1px solid var(--line);border-radius:15px;text-decoration:none;color:var(--ink);
+   font-weight:600;font-size:15px;line-height:1.25;box-shadow:0 1px 2px rgba(16,18,24,.04);
+   transition:transform .08s,box-shadow .12s,border-color .12s}
+ .tile:active{transform:scale(.97)}
+ .tile:hover{border-color:#d3d6df;box-shadow:0 6px 18px rgba(16,18,24,.08)}
+ .tt{overflow:hidden;text-overflow:ellipsis}
+ .empty{display:none;color:var(--muted);text-align:center;padding:40px 0;font-size:14px}
+ footer{color:var(--muted);font-size:11.5px;text-align:center;margin-top:24px}
+ @media(max-width:520px){
+   .grid{grid-template-columns:1fr 1fr;gap:9px}
+   .tile{min-height:64px;font-size:15px;border-radius:14px}
+   h1{font-size:20px}
  }
-</style><script>(function(){var b=document.getElementById('udcol');if(!b)return;function setc(on){document.body.classList.toggle('ud-collapsed',on);b.textContent=on?'›':'‹';b.title=on?'Expand menu':'Collapse menu';}setc(localStorage.getItem('ud_side')==='1');b.addEventListener('click',function(){var on=!document.body.classList.contains('ud-collapsed');localStorage.setItem('ud_side',on?'1':'0');setc(on);});})();</script><style>/* ── readability layer: bigger, darker, roomier text on every tab ── */
- body{font-size:14.5px;line-height:1.5}
- .sub{font-size:13.5px!important;color:#5c6270!important;line-height:1.55!important}
- h2{font-size:18px!important}
- .ref{font-size:17px!important} .dial{font-size:13.5px!important}
- .kname{font-size:13px!important;color:#4a5160!important}
- .lmsg{font-size:14px!important;color:#3f4552!important;line-height:1.5!important}
- .lmeta{font-size:12.5px!important;color:#767d89!important}
- .lmeta small,.lmsg small{font-size:12px!important}
- .usdv{font-size:22px!important} .hkdv{font-size:13.5px!important}
- .gb{font-size:11.5px!important;padding:2px 10px!important}
- .kcard{padding:14px 10px!important;gap:16px!important}
- .kcard img,.ph{height:78px!important;width:78px!important;flex-basis:78px!important}
- .alloffers>summary{font-size:13.5px!important;padding:8px 12px!important}
- .orow{font-size:13px!important;line-height:1.55!important;padding:8px 12px!important}
- .omsg{font-size:12.5px!important;color:#555c68!important}
- .oprice{font-size:13.5px!important} .owho{font-size:12.5px!important}
- .dtx{font-size:13.5px!important;line-height:1.65!important}
- .drow{padding:4px 0!important} .dsec{font-size:12px!important;color:#3f4552!important}
- .dwant{font-size:11.5px!important} .dwant0{font-size:11.5px!important}
- #dealtext{font-size:13.5px!important;line-height:1.65!important}
- table{font-size:13px!important} th,td{padding:8px 10px!important}
- tbody tr:nth-child(even){background:#fafaf7}
- details>summary{font-size:13.5px}
- input,select,button{font-size:15px!important}
- input[type=search]{font-size:16px!important;padding:11px 14px!important}
- .cnt{font-size:13px!important;color:#6d737d!important}
- .lfrow{font-size:13.5px!important;line-height:1.5!important}
- .rawbox{font-size:13px!important}
- small{font-size:12px!important}
- @media(max-width:640px){
-   body{font-size:14px}
-   .kcard img,.ph{height:64px!important;width:64px!important;flex-basis:64px!important}
-   .usdv{font-size:19px!important}
-   th,td{padding:7px 8px!important}
+ @media(prefers-color-scheme:dark){
+   :root{--bg:#0e0f13;--card:#16181e;--ink:#f2f3f6;--muted:#8b909c;--line:#252832}
  }
- /* ── design v4: Watchup-style — white, minimal, blue accent ── */
- :root{--paper:#f7f7f8;--ink:#101012;--line:#e7e7ea;--gold:#2f6bff;--accent:#2f6bff;--card:#fff;
-   --muted:#7d7f87;--navy:#101012;--green:#16a34a;--red:#dc2626}
- html,body{background:var(--paper)!important}
- body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter','Segoe UI',Roboto,sans-serif!important}
- h1{font-family:inherit!important;font-weight:800!important;font-size:25px!important;
-   letter-spacing:-.5px!important;color:#101012!important}
- .udnav{position:sticky;top:10px;z-index:60;background:#fff!important;border-radius:16px;
-   box-shadow:0 4px 18px rgba(16,16,18,.06);border:1px solid var(--line)}
- .udnav .brand b{color:#101012!important;letter-spacing:3px!important}
- .udstamp{color:#7d7f87!important;background:#f1f1f3!important}
- .udnav nav a{color:#5c5e66!important}
- .udnav nav a.on{background:#101012!important;color:#fff!important;font-weight:700!important}
- .udnav nav a:hover{background:#f1f1f3!important;color:#101012!important}
- .udupdate{background:#2f6bff!important;color:#fff!important;font-weight:700!important;box-shadow:none!important}
- .udupdate:hover{background:#2456d6!important}
- .stat{border-radius:14px!important;box-shadow:none!important;border:1px solid var(--line)!important}
- .stat .n{font-size:24px!important;letter-spacing:-.5px!important}
- .stat .l{color:#8a8c94!important;letter-spacing:.6px!important}
- h2{border:none!important;font-size:12.5px!important;padding-bottom:4px!important;
-   text-transform:uppercase;letter-spacing:1.6px!important;color:#8a8c94!important;font-weight:700!important}
- .kcard{background:#fff;border:1px solid var(--line)!important;border-radius:14px!important;
-   margin:0 0 10px!important;padding:14px 16px!important;box-shadow:none;transition:border-color .12s,box-shadow .12s}
- .kcard:hover{background:#fff!important;border-color:#d2d4da!important;box-shadow:0 4px 16px rgba(16,16,18,.06)}
- .kcard img,.ph{border-radius:12px!important;background:#f4f4f6!important;padding:4px}
- .usdv{font-size:22px!important;font-weight:800!important;letter-spacing:-.5px!important;color:#101012!important}
- .hkdv{color:#7d7f87!important} .dial{color:#2f6bff!important}
- .gb{border-radius:999px!important;letter-spacing:.2px!important;box-shadow:none!important}
- .gwin{background:#e8f7ee!important;color:#147a3d!important}
- .glose{background:#fdecec!important;color:#b42318!important}
- .gonly{background:#eef2ff!important;color:#3b5bdb!important}
- .koub{background:#101012!important;color:#fff!important;border-radius:999px!important}
- .alloffers{border-radius:12px!important;background:#fafafa!important;border-color:var(--line)!important}
- .alloffers>summary{color:#2f6bff!important}
- .copybox{border-radius:14px!important;border-color:var(--line)!important;background:#fff!important;box-shadow:none!important}
- .cbhead{background:#f4f6fb!important;color:#1d4ed8!important}
- #copyall{background:#2f6bff!important;color:#fff!important;border-radius:999px!important;padding:8px 18px!important}
- #copyall.done{background:#16a34a!important;color:#fff!important}
- input[type=search],select{border-radius:999px!important}
- input:focus,select:focus{outline:none!important;border-color:#2f6bff!important;
-   box-shadow:0 0 0 3px rgba(47,107,255,.15)!important}
- .grp{color:#147a3d!important}
- .tablewrap{border-radius:14px!important}
- thead th{background:#fafafa!important;color:#6b6e76!important}
- tbody tr:hover{background:#f5f7fb}
- tbody tr:nth-child(even){background:#fafafa}
- .rawbox{border-radius:14px!important}
- ::selection{background:#dbeafe}
- @media(max-width:640px){.udnav{top:6px;border-radius:14px}
-   h1{font-size:21px!important} .kcard{padding:12px!important;border-radius:12px!important}}
- /* ── mobile hardening: no sideways scroll, thumb-sized everything ── */
- html{-webkit-text-size-adjust:100%}
- @media(max-width:640px){
-   body{margin:8px auto!important;padding:0 8px!important;overflow-x:hidden}
-   .udnav{position:static;padding:8px 10px!important;gap:6px!important}
-   .udnav .brand img{height:24px!important} .udstamp{display:none}
-   .udupdate{padding:6px 10px!important;font-size:12px!important}
-   .udnav nav a{padding:8px 11px!important;font-size:13.5px!important}
-   h1{line-height:1.25!important;margin-top:10px!important}
-   .sub{font-size:13px!important}
-   .statstrip{grid-template-columns:repeat(3,1fr)!important;gap:6px!important}
-   .stat{padding:9px 10px!important;border-radius:12px!important}
-   .stat .n{font-size:18px!important} .stat .l{font-size:9px!important;letter-spacing:.3px!important}
-   .kcard{flex-wrap:wrap!important;gap:10px 12px!important}
-   .kmain{flex:1 1 60%!important}
-   .kprice{flex-basis:100%!important;display:flex!important;align-items:baseline;gap:10px;
-     text-align:left!important;border-top:1px dashed var(--line);padding-top:8px;margin-top:2px}
-   .usdv{font-size:20px!important} .hkdv{font-size:13px!important}
-   .cbhead{flex-wrap:wrap!important;padding:8px 10px!important;font-size:12.5px!important}
-   #copyall{padding:7px 14px!important;font-size:13px!important}
-   .dealview,#dealtext{padding:6px 10px 10px!important;max-height:300px!important}
-   .dtx{font-size:12.5px!important}
-   .drow{flex-wrap:wrap!important;gap:4px 8px!important}
-   .orow{padding:7px 8px!important;font-size:12.5px!important}
-   .oprice{min-width:0!important}
-   input[type=search]{width:100%!important;max-width:none!important;box-sizing:border-box}
-   select{max-width:100%!important}
-   .tablewrap{overflow-x:auto!important;-webkit-overflow-scrolling:touch}
-   table{font-size:12px!important} th,td{padding:6px 7px!important;white-space:nowrap}
-   .rawbox{max-height:340px!important;padding:2px 8px!important}
-   img{max-width:100%}
+</style></head><body>
+<div class=bar><div class=row><b>ULTIMATE&nbsp;DIAMOND</b><span class=sp></span>
+ <span class=upd>updated Aug 26, 12:00</span></div>
+ <input id=q type=search inputmode=search autocomplete=off placeholder="Search tabs — Rolex, deals, a dealer name…"></div>
+<div class=wrap>
+ <h1>Market Dashboard</h1>
+ <p class=lede>Live WhatsApp deal intelligence. Tap any tab — or search above.</p>
+ <section class=grp data-grp='start here'><h2>Start here</h2><div class=grid><a class=tile href='Ultimate_Diamond_Overview.html' data-s="⌗ overview overview"><span class=tt>⌗ Overview</span></a><a class=tile href='Ultimate_Diamond_Home.html' data-s="🔍 explore home"><span class=tt>🔍 Explore</span></a></div></section><section class=grp data-grp='brands'><h2>Brands</h2><div class=grid><a class=tile href='Ultimate_Diamond_Rolex.html' data-s="👑 rolex rolex"><span class=tt>👑 Rolex</span></a><a class=tile href='Ultimate_Diamond_AP.html' data-s="ap ap"><span class=tt>AP</span></a><a class=tile href='Ultimate_Diamond_Patek.html' data-s="patek patek"><span class=tt>Patek</span></a><a class=tile href='Ultimate_Diamond_Vacheron_Tab.html' data-s="vacheron vacheron"><span class=tt>Vacheron</span></a><a class=tile href='Ultimate_Diamond_Cartier.html' data-s="cartier cartier"><span class=tt>Cartier</span></a><a class=tile href='Ultimate_Diamond_FP_Journe.html' data-s="f.p. journe fpjourne"><span class=tt>F.P. Journe</span></a><a class=tile href='Ultimate_Diamond_High_End.html' data-s="💎 high end highend"><span class=tt>💎 High End</span></a></div></section><section class=grp data-grp='deals &amp; market'><h2>Deals &amp; Market</h2><div class=grid><a class=tile href='Ultimate_Diamond_Best_By_Ref.html' data-s="🏅 best by ref bestref"><span class=tt>🏅 Best by Ref</span></a><a class=tile href='Ultimate_Diamond_New_Used.html' data-s="🆕 new vs used newused"><span class=tt>🆕 New vs Used</span></a><a class=tile href='Ultimate_Diamond_Group_Deals.html' data-s="💬 group deals groupdeals"><span class=tt>💬 Group Deals</span></a><a class=tile href='Ultimate_Diamond_Deal_Alerts.html' data-s="🔔 deal alerts alerts2"><span class=tt>🔔 Deal Alerts</span></a><a class=tile href='Ultimate_Diamond_US_Market.html' data-s="us market 🇺🇸 usmkt"><span class=tt>US Market 🇺🇸</span></a></div></section><section class=grp data-grp='sell &amp; demand'><h2>Sell &amp; Demand</h2><div class=grid><a class=tile href='Ultimate_Diamond_Broadcast.html' data-s="📢 broadcast broadcast"><span class=tt>📢 Broadcast</span></a><a class=tile href='Ultimate_Diamond_2026_Price_List.html' data-s="📋 2026 price list prices"><span class=tt>📋 2026 Price List</span></a></div></section><section class=grp data-grp='dealers'><h2>Dealers <span class=cnt>19</span></h2><div class=grid><a class=tile href='Ultimate_Diamond_Dealers.html' data-s="👥 dealers dealers"><span class=tt>👥 Dealers</span></a><a class=tile href='Ultimate_Diamond_Kou_Genexx.html' data-s="🤝 kou/genexx kou"><span class=tt>🤝 Kou/Genexx</span></a><a class=tile href='Ultimate_Diamond_Ivan.html' data-s="🤝 ivan ivan"><span class=tt>🤝 Ivan</span></a><a class=tile href='Ultimate_Diamond_Tommy.html' data-s="🤝 tommy tommy"><span class=tt>🤝 Tommy</span></a><a class=tile href='Ultimate_Diamond_YHH_Chan.html' data-s="🤝 yhh chan yhhchan"><span class=tt>🤝 YHH Chan</span></a><a class=tile href='Ultimate_Diamond_Ian.html' data-s="🤝 ian ian"><span class=tt>🤝 Ian</span></a><a class=tile href='Ultimate_Diamond_Meilleur.html' data-s="🤝 meilleur meilleur"><span class=tt>🤝 Meilleur</span></a><a class=tile href='Ultimate_Diamond_Hei.html' data-s="🤝 hei hei"><span class=tt>🤝 Hei</span></a><a class=tile href='Ultimate_Diamond_Lan.html' data-s="🤝 lan lan"><span class=tt>🤝 lan</span></a><a class=tile href='Ultimate_Diamond_Irene.html' data-s="🤝 irene irene"><span class=tt>🤝 Irene</span></a><a class=tile href='Ultimate_Diamond_Ken.html' data-s="🤝 ken ken"><span class=tt>🤝 Ken</span></a><a class=tile href='Ultimate_Diamond_Shaelyn.html' data-s="🤝 shaelyn shaelyn"><span class=tt>🤝 Shaelyn</span></a><a class=tile href='Ultimate_Diamond_Eric_Kit.html' data-s="🤝 eric kit erickit"><span class=tt>🤝 Eric Kit</span></a><a class=tile href='Ultimate_Diamond_FH.html' data-s="🤝 fh fh"><span class=tt>🤝 FH</span></a><a class=tile href='Ultimate_Diamond_Reward.html' data-s="🤝 reward reward"><span class=tt>🤝 Reward</span></a><a class=tile href='Ultimate_Diamond_Chiu_Yu.html' data-s="🤝 chiu yu chiuyu"><span class=tt>🤝 Chiu Yu</span></a><a class=tile href='Ultimate_Diamond_Leo.html' data-s="🤝 leo leo"><span class=tt>🤝 Leo</span></a><a class=tile href='Ultimate_Diamond_Nik.html' data-s="🤝 nik nik"><span class=tt>🤝 Nik</span></a><a class=tile href='Ultimate_Diamond_Sam.html' data-s="🤝 sam sam"><span class=tt>🤝 Sam</span></a><a class=tile href='Ultimate_Diamond_Justin_Soter.html' data-s="🤝 justin soter soter"><span class=tt>🤝 Justin Soter</span></a></div></section><section class=grp data-grp='more'><h2>More</h2><div class=grid><a class=tile href='Ultimate_Diamond_Dealers.html' data-s="👥 dealers dealers"><span class=tt>👥 Dealers</span></a></div></section>
+ <div class=empty id=empty>No tab matches that.</div>
+ <footer>Ultimate Diamond Co. · Aug 26, 12:00</footer>
+</div>
+<script>
+(function(){
+ var q=document.getElementById('q'),empty=document.getElementById('empty');
+ var tiles=[].slice.call(document.querySelectorAll('.tile'));
+ var grps=[].slice.call(document.querySelectorAll('.grp'));
+ function run(){
+  var t=q.value.trim().toLowerCase().split(/\s+/).filter(Boolean),n=0;
+  tiles.forEach(function(el){
+   var s=el.getAttribute('data-s');
+   var ok=t.every(function(x){return s.indexOf(x)>-1;});
+   el.style.display=ok?'':'none'; if(ok)n++;
+  });
+  grps.forEach(function(g){
+   var any=g.querySelector('.tile:not([style*="none"])');
+   g.style.display=any?'':'none';
+  });
+  empty.style.display=n?'none':'block';
  }
- /* ── dealer dropdown in the nav ── */
- .udnav{position:sticky}
- .udnav nav details.dd>summary{list-style:none;cursor:pointer;padding:7px 13px;border-radius:8px;
-   color:#5c5e66;font-size:13px;font-weight:500;white-space:nowrap;display:inline-block;
-   transition:background .12s,color .12s}
- .udnav nav details.dd>summary::-webkit-details-marker{display:none}
- .udnav nav details.dd>summary:hover{background:#f1f1f3;color:#101012}
- .udnav nav details.dd>summary.on{background:#101012;color:#fff;font-weight:700}
- .udnav nav details.dd .ddm{position:absolute;left:12px;right:12px;top:calc(100% + 6px);
-   background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;
-   z-index:150;display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:3px;
-   box-shadow:0 18px 44px rgba(16,16,18,.14)}
- .udnav nav details.dd .ddm a{display:block;padding:8px 12px!important;color:#3c3e45!important}
- .udnav nav details.dd .ddm a:hover{background:#f1f1f3!important;color:#101012!important}
- .udnav nav details.dd .ddm a.on{background:#101012!important;color:#fff!important}
- @media(max-width:640px){
-   .udnav{position:relative}
-   .udnav nav details.dd .ddm{left:6px;right:6px;grid-template-columns:repeat(2,1fr);
-     max-height:62vh;overflow-y:auto}
- }
- /* ── app shell: fixed left sidebar on desktop (Watchup Pro layout) ── */
- @media(min-width:1024px){
-   body{margin:24px 30px 24px 268px!important;max-width:none!important;padding:0!important}
-   .udnav{position:fixed!important;left:12px;top:12px!important;bottom:12px;width:226px;z-index:80;
-     flex-direction:column;flex-wrap:nowrap!important;align-items:stretch;justify-content:flex-start;gap:6px;
-     border-radius:18px!important;padding:16px 12px!important;overflow-y:auto;overscroll-behavior:contain}
-   .udnav::-webkit-scrollbar{width:0}
-   .udnav .brand{flex-direction:column;align-items:flex-start;gap:8px;padding:2px 6px 12px;
-     border-bottom:1px solid var(--line);margin-bottom:6px}
-   .udnav .brand img{height:26px!important}
-   .udnav .brand b{font-size:10.5px!important;letter-spacing:2.5px!important}
-   .udstamp{display:none}
-   .udupdate{width:100%;text-align:center}
-   .udnav nav{flex-direction:column!important;gap:2px!important;flex-wrap:nowrap!important;
-     overflow:visible!important;width:auto!important}
-   .udnav nav a{display:block;padding:9px 12px!important;border-radius:10px!important;
-     font-size:13.5px!important}
-   .udnav nav details.dd{position:static}
-   .udnav nav details.dd>summary{display:block;padding:9px 12px;border-radius:10px;font-size:13.5px}
-   .udnav nav details.dd .ddm{position:static;box-shadow:none;border:1px solid var(--line);
-     background:#f7f7f8;grid-template-columns:1fr;padding:5px;margin:3px 0 5px;gap:1px}
-   .udnav nav details.dd .ddm a{padding:7px 11px!important;font-size:12.5px!important}
-   /* collapsible sidebar */
-   .udcol{display:inline-flex;position:absolute;top:10px;right:10px;width:26px;height:26px;border-radius:8px;
-     border:1px solid var(--line);background:#fff;cursor:pointer;font-size:16px;line-height:1;color:#5c5e66;
-     align-items:center;justify-content:center;padding:0 0 2px;z-index:2}
-   .udcol:hover{background:#f1f1f3;color:#101012}
-   body.ud-collapsed{margin-left:84px!important}
-   body.ud-collapsed .udnav{width:46px;padding:14px 6px!important;overflow:hidden}
-   body.ud-collapsed .udnav nav,body.ud-collapsed .udnav .brand b,body.ud-collapsed .udstamp,
-   body.ud-collapsed .udupdate{display:none!important}
-   body.ud-collapsed .udnav .brand{border-bottom:none;padding:0;align-items:center;gap:10px}
-   body.ud-collapsed .udnav .brand img{height:24px!important}
-   body.ud-collapsed .udcol{position:static;margin-top:4px}
- }
- @media(max-width:1023px){.udcol{display:none}}
-</style>
+ var to;q.addEventListener('input',function(){clearTimeout(to);to=setTimeout(run,40);});
+})();
+</script></body></html>
